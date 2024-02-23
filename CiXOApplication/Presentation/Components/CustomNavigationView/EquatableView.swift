@@ -9,7 +9,12 @@ import SwiftUI
 
 struct EquatableView: Equatable {
     
-    private let id: String = UUID().uuidString
+    init(view: some View, id: String = UUID().uuidString) {
+        self.view = AnyView(view)
+        self.id = id
+    }
+    
+    private let id: String
     var view: AnyView
     
     static func == (lhs: EquatableView, rhs: EquatableView) -> Bool {

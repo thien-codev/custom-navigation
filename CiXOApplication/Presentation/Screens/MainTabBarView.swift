@@ -9,90 +9,77 @@ import SwiftUI
 
 struct MainTabBarView: View {
     
+    enum Tab: String {
+        case home = "Home"
+        case setting = "Setting"
+        case debug = "Debug"
+    }
+    
     // MARK: - Properties
-    @State private var selectedTab:Tab = .home
+    @State private var selectedTab: Tab = .home
+    
+    private let tabbarHeight: CGFloat = 80
+    private let theme = Theme.style
     
     var body: some View {
-        ZStack{
-            TabView(selection: $selectedTab,content:  {
-                Group {
-                    NavigationView {
-                        Home()
-                    }
-                    .tag(Tab.home)
-                    
-                    NavigationView {
-                        Search()
-                    }
-                    .tag(Tab.setting)
-                    
-                    NavigationView {
-                        Notifications()
-                    }
-                    .tag(Tab.debug)
+        CustomNavigationView {
+            ZStack{
+                TabView(selection: $selectedTab,content:  {
+                    HomeView().tag(Tab.home)
+                    SettingView().tag(Tab.setting)
+                    DebugView().tag(Tab.debug)
+                })
+                VStack{
+                    Spacer()
+                    tabBar
                 }
-            })
-            
-            VStack{
-                Spacer()
-                tabBar
             }
+            .ignoresSafeArea()
+            .customNaigationBarRightTitle(selectedTab.rawValue)
         }
     }
     
     private var tabBar: some View {
-        HStack(content: {
+        VStack {
+            Divider()
             Spacer()
-            
-           
-                VStack(alignment: .center, content: {
-                    Image(systemName: "homekit")
+            HStack(content: {
+                Group {
+                    Image("home_icon")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 22)
-                })
-                .onTapGesture {
-//                    withAnimation {
-                        selectedTab = .home
-//                    }
-                }
-            
-            .foregroundStyle(selectedTab == .home ? Color.primary : Color.secondary)
-            Spacer()
-            
-                VStack(alignment: .center, content: {
-                    Image(systemName: "sparkle.magnifyingglass")
+                        .frame(width: 24)
+                        .onTapGesture {
+                            selectedTab = .home
+                        }
+                        .foregroundStyle(selectedTab == .home ? theme.cixoColor : Color.secondary)
+                    
+                    
+                    Image("setting_icon")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 22)
-                })
-                .onTapGesture {
-//                    withAnimation {
-                        selectedTab = .setting
-//                    }
-                }
-            
-            .foregroundStyle(selectedTab == .setting ? Color.primary : Color.secondary)
-            Spacer()
-            
-                VStack(alignment: .center, content: {
-                    Image(systemName: "bell.badge.fill")
+                        .frame(width: 24)
+                        .onTapGesture {
+                            selectedTab = .setting
+                        }
+                        .foregroundStyle(selectedTab == .setting ? theme.cixoColor : Color.secondary)
+                    
+                    
+                    Image("debug_icon")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 22)
-                })
-                .onTapGesture {
-//                    withAnimation {
-                        selectedTab = .debug
-//                    }
+                        .frame(width: 28)
+                        .onTapGesture {
+                            selectedTab = .debug
+                        }
+                        .foregroundStyle(selectedTab == .debug ? theme.cixoColor : Color.secondary)
+                    
                 }
-            
-            .foregroundStyle(selectedTab == .debug ? Color.primary : Color.secondary)
+                .frame(maxWidth: .infinity)
+            })
             Spacer()
-            
-        })
-        .padding()
-        .frame(height: 80)
+        }
+        .frame(width: UIScreen.width, height: 80)
         .background {
             Rectangle()
                 .fill(Color.white)
@@ -103,28 +90,3 @@ struct MainTabBarView: View {
 #Preview {
     MainTabBarView()
 }
-
-struct Home: View {
-    var body: some View {
-        Color.yellow.ignoresSafeArea()
-    }
-}
-
-struct Search: View {
-    var body: some View {
-        Color.red.ignoresSafeArea()
-    }
-}
-
-struct Notifications:View {
-    var body: some View {
-        Color.blue.ignoresSafeArea()
-    }
-}
-
-enum Tab {
-    case home
-    case setting
-    case debug
-}
-

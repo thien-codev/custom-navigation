@@ -26,8 +26,9 @@ struct CustomNavigationBarView: View {
                         defaultLeftItem
                     }
                     Spacer()
-                    if let rightItem = navBarStyle.rightItem?.view {
-                        rightItem
+                    if !navBarStyle.rightTitle.isEmpty {
+                        Text(navBarStyle.rightTitle)
+                            .font(.system(size: 18, weight: .semibold))
                     }
                 }
                 .padding(.bottom)

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BDAC6322B887E1700C15EAD /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAC6312B887E1700C15EAD /* UIScreen+Extensions.swift */; };
+		8BDAC6342B888ABC00C15EAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAC6332B888ABC00C15EAD /* HomeView.swift */; };
+		8BDAC6362B888BBD00C15EAD /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAC6352B888BBD00C15EAD /* SettingView.swift */; };
+		8BDAC6382B888BD200C15EAD /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAC6372B888BD200C15EAD /* DebugView.swift */; };
+		8BDAC63A2B88A50000C15EAD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAC6392B88A50000C15EAD /* SplashView.swift */; };
 		A209B4B02B870020002859D2 /* CustomNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4A92B870020002859D2 /* CustomNavigationLink.swift */; };
 		A209B4B12B870020002859D2 /* CustomNavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AA2B870020002859D2 /* CustomNavigationBarStyle.swift */; };
 		A209B4B22B870020002859D2 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AB2B870020002859D2 /* CustomNavigationView.swift */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BDAC6312B887E1700C15EAD /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
+		8BDAC6332B888ABC00C15EAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8BDAC6352B888BBD00C15EAD /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		8BDAC6372B888BD200C15EAD /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		8BDAC6392B88A50000C15EAD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		A209B4A92B870020002859D2 /* CustomNavigationLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink.swift; sourceTree = "<group>"; };
 		A209B4AA2B870020002859D2 /* CustomNavigationBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarStyle.swift; sourceTree = "<group>"; };
 		A209B4AB2B870020002859D2 /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
@@ -83,6 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				A227899C2B883CF7009EC4CB /* MainTabBarView.swift */,
+				8BDAC6332B888ABC00C15EAD /* HomeView.swift */,
+				8BDAC6352B888BBD00C15EAD /* SettingView.swift */,
+				8BDAC6372B888BD200C15EAD /* DebugView.swift */,
+				8BDAC6392B88A50000C15EAD /* SplashView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -121,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				A2164F7D2B8735E300A019EE /* Color+Extensions.swift */,
+				8BDAC6312B887E1700C15EAD /* UIScreen+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,14 +255,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A254AB832B84B74800FB7988 /* ContentView.swift in Sources */,
+				8BDAC6342B888ABC00C15EAD /* HomeView.swift in Sources */,
+				8BDAC63A2B88A50000C15EAD /* SplashView.swift in Sources */,
 				A209B4B52B870020002859D2 /* CustomNavigationBarPreferenceKey.swift in Sources */,
 				A254AB812B84B74800FB7988 /* CiXOApplicationApp.swift in Sources */,
 				A209B4B42B870020002859D2 /* CustomNavigationBarContainerView.swift in Sources */,
 				A209B4B22B870020002859D2 /* CustomNavigationView.swift in Sources */,
+				8BDAC6362B888BBD00C15EAD /* SettingView.swift in Sources */,
 				A209B4B12B870020002859D2 /* CustomNavigationBarStyle.swift in Sources */,
 				A209B4B02B870020002859D2 /* CustomNavigationLink.swift in Sources */,
 				A227899D2B883CF7009EC4CB /* MainTabBarView.swift in Sources */,
 				A209B4B92B8707C8002859D2 /* Theme.swift in Sources */,
+				8BDAC6322B887E1700C15EAD /* UIScreen+Extensions.swift in Sources */,
+				8BDAC6382B888BD200C15EAD /* DebugView.swift in Sources */,
 				A209B4B32B870020002859D2 /* CustomNavigationBarView.swift in Sources */,
 				A2164F7E2B8735E300A019EE /* Color+Extensions.swift in Sources */,
 				A209B4B62B870020002859D2 /* EquatableView.swift in Sources */,

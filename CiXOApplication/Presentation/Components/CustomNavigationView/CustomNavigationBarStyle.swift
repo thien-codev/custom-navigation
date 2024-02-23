@@ -9,13 +9,15 @@ import SwiftUI
 
 class CustomNavigationBarStyle: Equatable {
     
-    var id: String = UUID().uuidString
+    static var `default` = CustomNavigationBarStyle()
+    
+    var id: String { UUID().uuidString }
     var title: String = .init()
     var backgroundColor: Color = Theme.style.cixoColor
     var tintColor: Color = .white
     var height: CGFloat = 120
     var leftItem: EquatableView? = nil
-    var rightItem: EquatableView? = nil
+    var rightTitle: String = .init()
     
     @discardableResult
     func set(title: String) -> Self {
@@ -48,8 +50,8 @@ class CustomNavigationBarStyle: Equatable {
     }
     
     @discardableResult
-    func set(rightItem: EquatableView?) -> Self {
-        self.rightItem = rightItem
+    func set(rightTitle: String) -> Self {
+        self.rightTitle = rightTitle
         return self
     }
     

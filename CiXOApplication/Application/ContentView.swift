@@ -8,21 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        CustomNavigationView {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
-            }
-            .padding()
-            .customNaigationBarStyle(.init().set(rightItem: rightItem))
-        }
-    }
     
-    var rightItem: EquatableView {
-        EquatableView(view: AnyView(Text("CiXO").font(.system(size: 18, weight: .semibold))))
+    @State var activeSplash: Bool = true
+    
+    var body: some View {
+        Group {
+            if activeSplash {
+                SplashView(isActive: $activeSplash)
+            } else {
+                MainTabBarView()
+            }
+        }
     }
 }
 
