@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A209B4B02B870020002859D2 /* CustomNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4A92B870020002859D2 /* CustomNavigationLink.swift */; };
+		A209B4B12B870020002859D2 /* CustomNavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AA2B870020002859D2 /* CustomNavigationBarStyle.swift */; };
+		A209B4B22B870020002859D2 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AB2B870020002859D2 /* CustomNavigationView.swift */; };
+		A209B4B32B870020002859D2 /* CustomNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AC2B870020002859D2 /* CustomNavigationBarView.swift */; };
+		A209B4B42B870020002859D2 /* CustomNavigationBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AD2B870020002859D2 /* CustomNavigationBarContainerView.swift */; };
+		A209B4B52B870020002859D2 /* CustomNavigationBarPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AE2B870020002859D2 /* CustomNavigationBarPreferenceKey.swift */; };
+		A209B4B62B870020002859D2 /* EquatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AF2B870020002859D2 /* EquatableView.swift */; };
+		A209B4B92B8707C8002859D2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4B82B8707C8002859D2 /* Theme.swift */; };
+		A2164F7E2B8735E300A019EE /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2164F7D2B8735E300A019EE /* Color+Extensions.swift */; };
+		A227899D2B883CF7009EC4CB /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A227899C2B883CF7009EC4CB /* MainTabBarView.swift */; };
 		A254AB812B84B74800FB7988 /* CiXOApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254AB802B84B74800FB7988 /* CiXOApplicationApp.swift */; };
 		A254AB832B84B74800FB7988 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254AB822B84B74800FB7988 /* ContentView.swift */; };
 		A254AB852B84B74A00FB7988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A254AB842B84B74A00FB7988 /* Assets.xcassets */; };
@@ -14,6 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A209B4A92B870020002859D2 /* CustomNavigationLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink.swift; sourceTree = "<group>"; };
+		A209B4AA2B870020002859D2 /* CustomNavigationBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarStyle.swift; sourceTree = "<group>"; };
+		A209B4AB2B870020002859D2 /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		A209B4AC2B870020002859D2 /* CustomNavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarView.swift; sourceTree = "<group>"; };
+		A209B4AD2B870020002859D2 /* CustomNavigationBarContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarContainerView.swift; sourceTree = "<group>"; };
+		A209B4AE2B870020002859D2 /* CustomNavigationBarPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarPreferenceKey.swift; sourceTree = "<group>"; };
+		A209B4AF2B870020002859D2 /* EquatableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableView.swift; sourceTree = "<group>"; };
+		A209B4B82B8707C8002859D2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A2164F7D2B8735E300A019EE /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		A227899C2B883CF7009EC4CB /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		A254AB7D2B84B74800FB7988 /* CiXOApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiXOApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A254AB802B84B74800FB7988 /* CiXOApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiXOApplicationApp.swift; sourceTree = "<group>"; };
 		A254AB822B84B74800FB7988 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +52,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A209B4A32B86FA01002859D2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A2164F7C2B8735AD00A019EE /* Extensions */,
+				A209B4B72B8707A8002859D2 /* Theme */,
+				A209B4A72B86FA73002859D2 /* Components */,
+				A209B4A62B86FA6A002859D2 /* Screens */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A209B4A42B86FA12002859D2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A209B4A52B86FA46002859D2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A254AB802B84B74800FB7988 /* CiXOApplicationApp.swift */,
+				A254AB822B84B74800FB7988 /* ContentView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A209B4A62B86FA6A002859D2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A227899C2B883CF7009EC4CB /* MainTabBarView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A209B4A72B86FA73002859D2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A209B4A82B870020002859D2 /* CustomNavigationView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A209B4A82B870020002859D2 /* CustomNavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				A209B4A92B870020002859D2 /* CustomNavigationLink.swift */,
+				A209B4AA2B870020002859D2 /* CustomNavigationBarStyle.swift */,
+				A209B4AB2B870020002859D2 /* CustomNavigationView.swift */,
+				A209B4AC2B870020002859D2 /* CustomNavigationBarView.swift */,
+				A209B4AD2B870020002859D2 /* CustomNavigationBarContainerView.swift */,
+				A209B4AE2B870020002859D2 /* CustomNavigationBarPreferenceKey.swift */,
+				A209B4AF2B870020002859D2 /* EquatableView.swift */,
+			);
+			path = CustomNavigationView;
+			sourceTree = "<group>";
+		};
+		A209B4B72B8707A8002859D2 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A209B4B82B8707C8002859D2 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A2164F7C2B8735AD00A019EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2164F7D2B8735E300A019EE /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A2164F7F2B873D5000A019EE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A254AB842B84B74A00FB7988 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		A254AB742B84B74700FB7988 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +152,10 @@
 		A254AB7F2B84B74800FB7988 /* CiXOApplication */ = {
 			isa = PBXGroup;
 			children = (
-				A254AB802B84B74800FB7988 /* CiXOApplicationApp.swift */,
-				A254AB822B84B74800FB7988 /* ContentView.swift */,
-				A254AB842B84B74A00FB7988 /* Assets.xcassets */,
+				A2164F7F2B873D5000A019EE /* Resource */,
+				A209B4A52B86FA46002859D2 /* Application */,
+				A209B4A42B86FA12002859D2 /* Domain */,
+				A209B4A32B86FA01002859D2 /* Presentation */,
 				A254AB862B84B74A00FB7988 /* Preview Content */,
 			);
 			path = CiXOApplication;
@@ -138,7 +240,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A254AB832B84B74800FB7988 /* ContentView.swift in Sources */,
+				A209B4B52B870020002859D2 /* CustomNavigationBarPreferenceKey.swift in Sources */,
 				A254AB812B84B74800FB7988 /* CiXOApplicationApp.swift in Sources */,
+				A209B4B42B870020002859D2 /* CustomNavigationBarContainerView.swift in Sources */,
+				A209B4B22B870020002859D2 /* CustomNavigationView.swift in Sources */,
+				A209B4B12B870020002859D2 /* CustomNavigationBarStyle.swift in Sources */,
+				A209B4B02B870020002859D2 /* CustomNavigationLink.swift in Sources */,
+				A227899D2B883CF7009EC4CB /* MainTabBarView.swift in Sources */,
+				A209B4B92B8707C8002859D2 /* Theme.swift in Sources */,
+				A209B4B32B870020002859D2 /* CustomNavigationBarView.swift in Sources */,
+				A2164F7E2B8735E300A019EE /* Color+Extensions.swift in Sources */,
+				A209B4B62B870020002859D2 /* EquatableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +392,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +422,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
