@@ -16,8 +16,8 @@ class CustomNavigationBarStyle: Equatable {
     var backgroundColor: Color = Theme.style.cixoColor
     var tintColor: Color = .white
     var height: CGFloat = 120
-    var leftItem: EquatableView? = nil
-    var rightTitle: String = .init()
+    var leftItem: AnyView? = nil
+    var rightItem: AnyView? = nil
     
     @discardableResult
     func set(title: String) -> Self {
@@ -44,14 +44,14 @@ class CustomNavigationBarStyle: Equatable {
     }
     
     @discardableResult
-    func set(leftItem: EquatableView?) -> Self {
+    func set(leftItem: AnyView?) -> Self {
         self.leftItem = leftItem
         return self
     }
     
     @discardableResult
-    func set(rightTitle: String) -> Self {
-        self.rightTitle = rightTitle
+    func set(rightItem: AnyView?) -> Self {
+        self.rightItem = rightItem
         return self
     }
     

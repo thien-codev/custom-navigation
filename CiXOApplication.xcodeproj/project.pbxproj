@@ -12,13 +12,13 @@
 		8BDAC6362B888BBD00C15EAD /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAC6352B888BBD00C15EAD /* SettingView.swift */; };
 		8BDAC6382B888BD200C15EAD /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAC6372B888BD200C15EAD /* DebugView.swift */; };
 		8BDAC63A2B88A50000C15EAD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAC6392B88A50000C15EAD /* SplashView.swift */; };
+		8BDAC63C2B88ACAC00C15EAD /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAC63B2B88ACAC00C15EAD /* PermissionView.swift */; };
 		A209B4B02B870020002859D2 /* CustomNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4A92B870020002859D2 /* CustomNavigationLink.swift */; };
 		A209B4B12B870020002859D2 /* CustomNavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AA2B870020002859D2 /* CustomNavigationBarStyle.swift */; };
 		A209B4B22B870020002859D2 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AB2B870020002859D2 /* CustomNavigationView.swift */; };
 		A209B4B32B870020002859D2 /* CustomNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AC2B870020002859D2 /* CustomNavigationBarView.swift */; };
 		A209B4B42B870020002859D2 /* CustomNavigationBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AD2B870020002859D2 /* CustomNavigationBarContainerView.swift */; };
 		A209B4B52B870020002859D2 /* CustomNavigationBarPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AE2B870020002859D2 /* CustomNavigationBarPreferenceKey.swift */; };
-		A209B4B62B870020002859D2 /* EquatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4AF2B870020002859D2 /* EquatableView.swift */; };
 		A209B4B92B8707C8002859D2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209B4B82B8707C8002859D2 /* Theme.swift */; };
 		A2164F7E2B8735E300A019EE /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2164F7D2B8735E300A019EE /* Color+Extensions.swift */; };
 		A227899D2B883CF7009EC4CB /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A227899C2B883CF7009EC4CB /* MainTabBarView.swift */; };
@@ -34,13 +34,13 @@
 		8BDAC6352B888BBD00C15EAD /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		8BDAC6372B888BD200C15EAD /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		8BDAC6392B88A50000C15EAD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		8BDAC63B2B88ACAC00C15EAD /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
 		A209B4A92B870020002859D2 /* CustomNavigationLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink.swift; sourceTree = "<group>"; };
 		A209B4AA2B870020002859D2 /* CustomNavigationBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarStyle.swift; sourceTree = "<group>"; };
 		A209B4AB2B870020002859D2 /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		A209B4AC2B870020002859D2 /* CustomNavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarView.swift; sourceTree = "<group>"; };
 		A209B4AD2B870020002859D2 /* CustomNavigationBarContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarContainerView.swift; sourceTree = "<group>"; };
 		A209B4AE2B870020002859D2 /* CustomNavigationBarPreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarPreferenceKey.swift; sourceTree = "<group>"; };
-		A209B4AF2B870020002859D2 /* EquatableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableView.swift; sourceTree = "<group>"; };
 		A209B4B82B8707C8002859D2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A2164F7D2B8735E300A019EE /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		A227899C2B883CF7009EC4CB /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
@@ -97,6 +97,7 @@
 				8BDAC6352B888BBD00C15EAD /* SettingView.swift */,
 				8BDAC6372B888BD200C15EAD /* DebugView.swift */,
 				8BDAC6392B88A50000C15EAD /* SplashView.swift */,
+				8BDAC63B2B88ACAC00C15EAD /* PermissionView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -118,7 +119,6 @@
 				A209B4AC2B870020002859D2 /* CustomNavigationBarView.swift */,
 				A209B4AD2B870020002859D2 /* CustomNavigationBarContainerView.swift */,
 				A209B4AE2B870020002859D2 /* CustomNavigationBarPreferenceKey.swift */,
-				A209B4AF2B870020002859D2 /* EquatableView.swift */,
 			);
 			path = CustomNavigationView;
 			sourceTree = "<group>";
@@ -269,8 +269,8 @@
 				8BDAC6322B887E1700C15EAD /* UIScreen+Extensions.swift in Sources */,
 				8BDAC6382B888BD200C15EAD /* DebugView.swift in Sources */,
 				A209B4B32B870020002859D2 /* CustomNavigationBarView.swift in Sources */,
+				8BDAC63C2B88ACAC00C15EAD /* PermissionView.swift in Sources */,
 				A2164F7E2B8735E300A019EE /* Color+Extensions.swift in Sources */,
-				A209B4B62B870020002859D2 /* EquatableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

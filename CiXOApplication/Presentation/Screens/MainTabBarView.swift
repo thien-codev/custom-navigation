@@ -16,7 +16,12 @@ struct MainTabBarView: View {
     }
     
     // MARK: - Properties
-    @State private var selectedTab: Tab = .home
+    @State private var navBarStyle: CustomNavigationBarStyle = .default
+    @State private var selectedTab: Tab = .home {
+        didSet {
+            navBarStyle = navBarStyle.set(rightItem: rightItem)
+        }
+    }
     
     private let tabbarHeight: CGFloat = 80
     private let theme = Theme.style
@@ -35,8 +40,16 @@ struct MainTabBarView: View {
                 }
             }
             .ignoresSafeArea()
-            .customNaigationBarRightTitle(selectedTab.rawValue)
+            .customNaigationBarStyle(navBarStyle)
         }
+        .onAppear {
+            navBarStyle = .default.set(rightItem: rightItem)
+        }
+    }
+    
+    private var rightItem: AnyView {
+        Text(selectedTab.rawValue)
+            .font(.system(size: 18, weight: .semibold)).eraseToAnyView()
     }
     
     private var tabBar: some View {
@@ -73,7 +86,6 @@ struct MainTabBarView: View {
                             selectedTab = .debug
                         }
                         .foregroundStyle(selectedTab == .debug ? theme.cixoColor : Color.secondary)
-                    
                 }
                 .frame(maxWidth: .infinity)
             })

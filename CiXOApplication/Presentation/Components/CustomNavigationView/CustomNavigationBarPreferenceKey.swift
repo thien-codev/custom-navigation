@@ -15,10 +15,10 @@ struct CustomNavigationBarHiddenPreferenceKey: PreferenceKey {
     }
 }
 
-struct CustomNavigationBarRightTitlePreferenceKey: PreferenceKey {
-    static var defaultValue: String = .init()
+struct CustomNavigationBarStylePreferenceKey: PreferenceKey {
+    static var defaultValue:CustomNavigationBarStyle = .default
     
-    static func reduce(value: inout String, nextValue: () -> String) {
+    static func reduce(value: inout CustomNavigationBarStyle, nextValue: () -> CustomNavigationBarStyle) {
         value = nextValue()
     }
 }
@@ -28,7 +28,7 @@ extension View {
         preference(key: CustomNavigationBarHiddenPreferenceKey.self, value: hidden)
     }
     
-    func customNaigationBarRightTitle(_ string: String) -> some View {
-        preference(key: CustomNavigationBarRightTitlePreferenceKey.self, value: string)
+    func customNaigationBarStyle(_ value: CustomNavigationBarStyle) -> some View {
+        preference(key: CustomNavigationBarStylePreferenceKey.self, value: value)
     }
 }

@@ -16,19 +16,18 @@ struct CustomNavigationBarView: View {
     var body: some View {
         VStack {
             Spacer()
-            ZStack {
+            VStack(spacing: 0) {
                 Text(navBarStyle.title)
                     .font(.system(size: 17, weight: .semibold))
                 HStack {
-                    if let leftItem = navBarStyle.leftItem?.view {
+                    if let leftItem = navBarStyle.leftItem {
                         leftItem
                     } else {
                         defaultLeftItem
                     }
                     Spacer()
-                    if !navBarStyle.rightTitle.isEmpty {
-                        Text(navBarStyle.rightTitle)
-                            .font(.system(size: 18, weight: .semibold))
+                    if let rightItem = navBarStyle.rightItem {
+                        rightItem
                     }
                 }
                 .padding(.bottom)

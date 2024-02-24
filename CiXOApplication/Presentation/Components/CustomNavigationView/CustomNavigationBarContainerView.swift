@@ -28,8 +28,8 @@ struct CustomNavigationBarContainerView<Content: View>: View {
             content
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding(.top, barHidden ? 0 : navBarStyle.height)
-                .onPreferenceChange(CustomNavigationBarRightTitlePreferenceKey.self, perform: { value in
-                    navBarStyle = navBarStyle.set(rightTitle: value)
+                .onPreferenceChange(CustomNavigationBarStylePreferenceKey.self, perform: { value in
+                    navBarStyle = value
                 })
                 .onPreferenceChange(CustomNavigationBarHiddenPreferenceKey.self, perform: { value in
                     barHidden = value

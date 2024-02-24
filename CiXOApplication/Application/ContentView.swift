@@ -16,7 +16,7 @@ struct ContentView: View {
             if activeSplash {
                 SplashView(isActive: $activeSplash)
             } else {
-                MainTabBarView()
+                PermissionView()
             }
         }
     }
