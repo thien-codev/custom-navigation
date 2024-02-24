@@ -14,7 +14,7 @@ struct PermissionView: View {
                 Text("Permisson view")
                 CustomNavigationLink {
                     MainTabBarView()
-                        .customNaigationBarHidden(true)
+                        .eraseToAnyView()
                 } label: {
                     Text("Navigate to Homepage")
                 }

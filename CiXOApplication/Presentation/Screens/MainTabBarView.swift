@@ -27,21 +27,19 @@ struct MainTabBarView: View {
     private let theme = Theme.style
     
     var body: some View {
-        CustomNavigationView {
-            ZStack{
-                TabView(selection: $selectedTab,content:  {
-                    HomeView().tag(Tab.home)
-                    SettingView().tag(Tab.setting)
-                    DebugView().tag(Tab.debug)
-                })
-                VStack{
-                    Spacer()
-                    tabBar
-                }
+        ZStack{
+            TabView(selection: $selectedTab,content:  {
+                HomeView().tag(Tab.home)
+                SettingView().tag(Tab.setting)
+                DebugView().tag(Tab.debug)
+            })
+            VStack{
+                Spacer()
+                tabBar
             }
-            .ignoresSafeArea()
-            .customNaigationBarStyle(navBarStyle)
         }
+        .ignoresSafeArea()
+        .customNaigationBarStyle(navBarStyle)
         .onAppear {
             navBarStyle = .default.set(rightItem: rightItem)
         }
@@ -63,26 +61,27 @@ struct MainTabBarView: View {
                         .scaledToFit()
                         .frame(width: 24)
                         .onTapGesture {
+                            guard selectedTab != .home else { return }
                             selectedTab = .home
                         }
                         .foregroundStyle(selectedTab == .home ? theme.cixoColor : Color.secondary)
-                    
                     
                     Image("setting_icon")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 24)
                         .onTapGesture {
+                            guard selectedTab != .setting else { return }
                             selectedTab = .setting
                         }
                         .foregroundStyle(selectedTab == .setting ? theme.cixoColor : Color.secondary)
-                    
                     
                     Image("debug_icon")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 28)
                         .onTapGesture {
+                            guard selectedTab != .debug else { return }
                             selectedTab = .debug
                         }
                         .foregroundStyle(selectedTab == .debug ? theme.cixoColor : Color.secondary)
