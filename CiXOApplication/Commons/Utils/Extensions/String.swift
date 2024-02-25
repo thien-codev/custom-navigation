@@ -11,4 +11,8 @@ extension String {
     func trim() -> String {
         return trimmingCharacters(in: .whitespacesAndNewlines)
     }
+    
+    func localised(bundle: Bundle = .main) -> String {
+        return NSLocalizedString(self, bundle: bundle, comment: "")
+    }
 }

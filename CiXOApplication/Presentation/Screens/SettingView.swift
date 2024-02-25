@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingView: View {
     var body: some View {
-        Text("Setting")
+        Text("setting_tabbar_title".localised())
     }
 }
 

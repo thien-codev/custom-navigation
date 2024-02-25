@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        Text("Home")
+        Text("home_tabbar_title".localised())
     }
 }
 

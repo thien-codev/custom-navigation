@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  CiXOApplication
+
+  Created by Nguyen Thien on 25/02/2024.
+  
+*/
+
+"navigate_to_home" = "Navigate to Homepage";
+"permission_view" = "Permisson view";
+"home_tabbar_title" = "Home";
+"setting_tabbar_title" = "Setting";
+"debug_tabbar_title" = "Debug";

@@ -9,10 +9,21 @@ import SwiftUI
 
 struct MainTabBarView: View {
     
-    enum Tab: String {
-        case home = "Home"
-        case setting = "Setting"
-        case debug = "Debug"
+    enum Tab {
+        case home
+        case setting
+        case debug
+        
+        var title: String {
+            switch self {
+            case .home:
+                return "home_tabbar_title".localised()
+            case .setting:
+                return "setting_tabbar_title".localised()
+            case .debug:
+                return "debug_tabbar_title".localised()
+            }
+        }
     }
     
     // MARK: - Properties
@@ -46,7 +57,7 @@ struct MainTabBarView: View {
     }
     
     private var rightItem: AnyView {
-        Text(selectedTab.rawValue)
+        Text(selectedTab.title)
             .font(.system(size: 18, weight: .semibold)).eraseToAnyView()
     }
     

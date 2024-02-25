@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DebugView: View {
     var body: some View {
-        Text("Debug")
+        Text("debug_tabbar_title".localised())
     }
 }
 

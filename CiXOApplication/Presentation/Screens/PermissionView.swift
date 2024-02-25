@@ -11,12 +11,12 @@ struct PermissionView: View {
     var body: some View {
         CustomNavigationView {
             VStack {
-                Text("Permisson view")
+                Text("permission_view".localised())
                 CustomNavigationLink {
                     MainTabBarView()
                         .eraseToAnyView()
                 } label: {
-                    Text("Navigate to Homepage")
+                    Text("navigate_to_home".localised())
                 }
             }
         }
