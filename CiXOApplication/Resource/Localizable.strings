@@ -11,3 +11,13 @@
 "home_tabbar_title" = "Home";
 "setting_tabbar_title" = "Setting";
 "debug_tabbar_title" = "Debug";
+"required_permissions" = "Required Permissions";
+"location_always" = "Location 'Always'";
+"location_always_description" = "Location must be set as 'Always' and Precise Location on.";
+"motion_fitness" = "Motion & Fitness";
+"motion_fitness_description" = "Mode of transport detection";
+"notifications" = "Notifications";
+"notifications_description" = "Trip detection alert";
+"blutooth" = "Blutooth";
+"blutooth_description" = "Beacon detection";
+"continue" = "Continue";
